@@ -1,0 +1,1898 @@
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url('../font/Open_Sans/static/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url("../font/Open_Sans/static/OpenSans-Bold.ttf");
+}
+
+body {
+    font: 14px "Open Sans Regular" !important;
+    color: #333 !important;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*HEADER*/
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    z-index: 1000;
+}
+
+#header {
+    border-bottom: 1px solid #ecebeb;
+    background-color: #fff;
+}
+
+.uk-container::before {
+    content: "";
+    display: table;
+    justify-content: center;
+}
+
+.uk-container>:last-child {
+    margin-bottom: 0;
+}
+
+.uk-container {
+    box-sizing: content-box;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.headicon {
+    padding-left: 0;
+    padding-top: 6px;
+    width: 100%;
+    color: #d0d0d0;
+    padding-bottom: 10px !important;
+}
+
+.uk-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.uk-grid {
+    margin-left: -20px;
+}
+
+.uk-grid>* {
+    padding-left: 20px;
+}
+
+.col-lg-6 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.uk-icon {
+    vertical-align: middle;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    overflow: visible;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    padding: 0;
+    background-color: transparent;
+    display: inline-block;
+    fill: currentcolor;
+    line-height: 0;
+}
+
+.uk-grid>*>:last-child {
+    margin-bottom: 0;
+}
+
+.uk-icon:not(.uk-preserve) [stroke*='#']:not(.uk-preserve) {
+    stroke: currentcolor;
+}
+
+div.headicon a {
+    color: #d0d0d0 !important;
+}
+
+.container::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.uk-navbar-left,
+.uk-navbar-right {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.uk-navbar-nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.uk-navbar-nav>li>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 50px;
+    padding: 0 12px;
+    font-size: .875rem;
+    font: normal 15px "Open Sans Regular" !important;
+    text-decoration: none;
+    color: #333;
+    transition: .1s ease-in-out;
+    transition-property: color, background-color;
+}
+
+.uk-navbar-nav>li:hover>a,
+a:hover {
+    color: #00947d !important;
+    text-decoration: none !important;
+    outline: 0;
+    cursor: pointer;
+}
+
+/*Menu cấp 2*/
+.uk-navbar-dropdown {
+    position: absolute;
+    z-index: 1020;
+    box-sizing: border-box;
+    width: 200px;
+    padding: 15px;
+    background: #fff;
+    color: #666;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, .15);
+}
+
+.uk-dropdown {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1020;
+    box-sizing: border-box;
+    min-width: 200px;
+    padding: 25px;
+    background: #fff;
+    color: #666;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, .15);
+}
+
+.title14 {
+    font: 14px "Open Sans Bold";
+}
+
+.colorgreen {
+    color: #00947d !important;
+}
+
+.uk-list {
+    padding: 0;
+    list-style: none;
+}
+
+#header .itemdest,
+#header .itemdest li {
+    margin-top: 8px !important;
+}
+
+#header .itemdest li {
+    padding-left: 5px;
+}
+
+.uk-link,
+a {
+    color: #333 !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.uk-list>li>:last-child {
+    margin-bottom: 0;
+}
+
+.uk-navbar-nav>li:hover .uk-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.uk-width-xlarge {
+    width: 600px;
+}
+
+.uk-list>li:nth-child(n+2),
+.uk-list>li>ul {
+    margin-top: 10px;
+}
+
+#header .itemdest {
+    margin-bottom: 8px !important;
+}
+
+.uk-width-medium {
+    width: 300px;
+}
+
+a.halongsubmenu {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+    display: block;
+    background: #39687a;
+}
+
+.col-lg-3, .col-lg-4, .col-lg-6, .col-lg-8 {
+    padding-right: 0px;
+}
+
+.navbar-right {
+    margin-left: auto;
+}
+
+.input-group>.input-group-prepend>.btn {
+    background-color: transparent;
+    padding: 0 10px;
+    border-radius: 0.375rem;
+}
+
+.dropdown-toggle:focus + .dropdown-menu {
+    display: block;
+}
+
+#languageBtn:active,
+#languageBtn:focus {
+    border: 1px solid #000; 
+    background-color: #fff; 
+    outline: none; 
+    box-shadow: none;
+}
+
+#languageBtn, .uk-navbar-toggle {
+    display: none;
+}
+
+.title15 {
+    font: 15px "Open Sans Bold";
+}
+
+#header .mytrip {
+    color: #fff !important;
+    padding: 8px 14px;
+}
+
+#header .mytrip,
+.buttongreen:hover {
+    background: #ea5a35;
+}
+
+*+.uk-grid-margin,
+.uk-grid+.uk-grid,
+.uk-grid>.uk-grid-margin {
+    margin-top: 20px;
+}
+
+/*END*/
+/*Design Navbar*/
+.uk-offcanvas {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.uk-offcanvas-flip .uk-offcanvas {
+    right: 0;
+    left: auto;
+}
+
+
+.uk-offcanvas-flip .uk-offcanvas-bar-animation {
+    transition-property: right;
+}
+
+.uk-offcanvas-flip .uk-open>.uk-offcanvas-bar {
+    left: auto;
+    right: 0;
+}
+#offcanvas .uk-offcanvas-bar {
+    background: #fff;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#offcanvas .uk-offcanvas-close {
+    color: #333;
+    padding-right: 15px;
+}
+.uk-offcanvas-bar-animation {
+    transition: right .3s ease-out;
+}
+
+.uk-close {
+    color: #999;
+    transition: .1s ease-in-out;
+    transition-property: color,opacity;
+}
+
+.uk-offcanvas-close {
+    position: absolute;
+    z-index: 1000;
+    top: 20px;
+    right: 20px;
+    padding: 5px;
+}
+
+.uk-nav-default {
+    font-size: .875rem;
+}
+
+.uk-nav, .uk-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#offcanvas .uk-offcanvas-bar .uk-nav>li {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 8px 5px 8px 14px;
+}
+
+#offcanvas .uk-parenthome a, #offcanvas a {
+    font: 14px "Open Sans Regular"!important;
+    color: #333;
+}
+
+#offcanvas .uk-nav-parent-icon>.uk-parent>a::after {
+    content: "";
+    width: 1.5em;
+    height: 1.5em;
+    float: right;
+    background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23999%22%20stroke-width%3D%221.1%22%20points%3D%2210%201%204%207%2010%2013%22%20%2F%3E%0A%3C%2Fsvg%3E);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+#offcanvas .uk-nav-sub {
+    padding-left: 5px!important;
+}
+ul.uk-nav-sub {
+    padding: 5px 0 5px 15px;
+}
+
+.uk-nav>li>a {
+    padding: 5px 0;
+}
+
+ul.boxsocial {
+    color: #333;
+    padding-left: 14px;
+}
+
+#offcanvas .uk-nav-sub li {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#offcanvas .uk-nav-sub li, div.boxitinerary .titledaysnoicon {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#offcanvas .uk-nav-parent-icon>.open>a::after {
+    background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2214%22%20viewBox%3D%220%200%2014%2014%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%2300947d%22%20stroke-width%3D%221.1%22%20points%3D%221%204%207%2010%2013%204%22%20%2F%3E%0A%3C%2Fsvg%3E);
+}
+
+#offcanvas {
+    height: 100vh;
+    overflow: auto;
+    transition: max-height 0.3s ease-out; 
+}
+
+#offcanvas .uk-nav-sub {
+    scroll-behavior: smooth;
+}
+/*MAIN*/
+.destination {
+    padding-bottom: 30px;
+}
+
+.uk-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    padding-top: 16px;
+}
+
+.uk-breadcrumb>* {
+    flex: none;
+}
+
+.uk-breadcrumb .active {
+    color: #00947d;
+}
+
+.uk-breadcrumb>*>* {
+    display: inline-block;
+    font-size: 14px;
+    color: #999;
+}
+
+.uk-breadcrumb>:nth-child(n+2):not(.uk-first-column)::before {
+    content: "/";
+    display: inline-block;
+    margin: 0 15px;
+    color: #999;
+}
+
+/* <div class="boxcustomize"> */
+.boxcustomize {
+    background: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    margin-bottom: 20px;
+}
+
+.boxcustomize .title16 {
+    background: #f8f8f8!important;
+    border-bottom: 1px solid #e3e3e3;
+    line-height: 40px;
+    margin-bottom: 0!important;
+}
+
+.boxcustomize .boxcontent {
+    background: #fff;
+    padding: 20px;
+}
+
+.boxmap {
+    height: 790px;
+    width: 604px!important;
+    background: url('../images/maps/bgmap.png') no-repeat;
+}
+
+.boxmap .uk-list, .boxmap .uk-list li {
+    padding-top: 0!important;
+    margin-top: 0!important;
+}
+
+figure {
+    margin: 0 0 20px 0;
+}
+
+.uk-list>li::after, .uk-list>li::before {
+    content: "";
+    display: table;
+}
+
+.uk-list>li::after{
+    clear: both;
+}
+
+.dongvan .content {
+    padding-bottom: 14px;
+}
+
+.dongvan .content, .hagiang .content {
+    width: 90px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.dongvan .content {
+    margin-left: 263px;
+    padding-top: 10px;
+    background: url('../images/maps/map-icon.png') 10px bottom no-repeat;
+}
+
+.dongvan .content:hover {
+    background: url('../images/maps/maphover-icon.png') 10px bottom no-repeat;
+}
+
+.hagiang .content {
+    margin-left: 255px;
+    padding-left: 18px;
+    background: url('../images/maps/map-icon.png') 0 6px no-repeat;
+}
+
+.hagiang .content:hover, .hue .content:hover, .pakse .content:hover, .vangviengvinh .content1:hover, .vientaine .content:hover {
+    background: url('../images/maps/maphover-icon.png') 0 6px no-repeat;
+}
+
+.bachacaobang, .sapababe {
+    height: 18px;
+    line-height: 18px;
+}
+
+.bachacaobang, .visabox .topdest {
+    padding-bottom: 0!important;
+}
+
+.bachacaobang {
+    display: block;
+    padding-top: 0;
+    margin-left: 232px;
+}
+
+.bachacaobang .content {
+    display: block;
+    width: 50px;
+    cursor: pointer;
+    padding-bottom: 10px!important;
+    margin-top: -32px!important;
+    padding-left: 0!important;
+    line-height: 48px;
+    height: 48px;
+    background: url('../images/maps/map-icon.png') 24px 32px no-repeat;
+}
+
+.bachacaobang .content1 {
+    width: 90px;
+    cursor: pointer;
+    padding-left: 18px;
+    margin-left: 50px;
+    display: block;
+    background: url('../images/maps/map-icon.png') 0 4px no-repeat;
+}
+
+.bachacaobang .content:hover {
+    background: url('../images/maps/maphover-icon.png') 24px 32px no-repeat;
+}
+
+.bachacaobang .content1:hover, .battambangnhatrang .content1:hover, .danang .content:hover, .phongnha .content:hover, .phuquocbentre .content1:hover, .pnompenhmuine .content1:hover, .siemreapbuonmathuot .content:hover {
+    background: url('../images/maps/maphover-icon.png') 0 4px no-repeat;
+}
+
+.dienbien, .dienbien .content, .maichaucatba, .mucangchai .content, .nghialo .content, .puluongninhbinh, .sapababe {
+    padding-top: 0!important;
+}
+
+.dienbien, .dienbien .content, .mucangchai .content, .sapababe, .sapababe .content {
+    padding-bottom: 0!important;
+}
+
+#sendsubcribe, .boxprofile .clsradio label, .sapababe .content {
+    padding-right: 20px;
+}
+
+.sapababe {
+    display: block;
+    margin-top: 0!important;
+    padding-left: 140px;
+    width: 100%;
+}
+
+.sapababe .content {
+    display: block;
+    width: 90px;
+    cursor: pointer;
+    margin-top: -35px!important;
+    line-height: 36px;
+    text-align: right;
+    height: 36px;
+    background: url('../images/maps/map-icon.png') 74px 20px no-repeat;
+}
+
+.sapababe .content:hover {
+    background: url('../images/maps/maphover-icon.png') 74px 20px no-repeat;
+}
+
+.dienbien .content, .mucangchai .content, .sapababe .content1 {
+    line-height: 16px;
+    height: 16px;
+    display: block;
+    cursor: pointer;
+}
+
+.sapababe .content1 {
+    width: 70px;
+    padding-left: 18px;
+    margin-left: 74px;
+    margin-top: 0!important;
+    background: url('../images/maps/map-icon.png') no-repeat;
+}
+
+.canthovinhlong .content1:hover, .maichaucatba .content1:hover, .myson .content:hover, .puluongninhbinh .content1:hover, .sapababe .content1:hover {
+    background: url('../images/maps/maphover-icon.png') no-repeat;
+}
+
+.dienbien, .maichaucatba {
+    text-align: left!important;
+}
+
+.dienbien {
+    display: block;
+    height: 14px;
+    line-height: 14px;
+    margin-top: -18px!important;
+    padding-left: 54px;
+    float: left;
+    width: 100%;
+}
+
+.dienbien .content {
+    width: 90px;
+    margin-top: -14px!important;
+    margin-left: 25px;
+    background: url('../images/maps/map-icon.png') 74px 0 no-repeat;
+}
+
+.cambodiadalat .content1:hover, .dienbien .content:hover {
+    background: url('../images/maps/maphover-icon.png') 74px 0 no-repeat;
+}
+
+.mucangchai {
+    display: block;
+    padding-left: 94px!important;
+    float: left;
+    width: 100%;
+}
+
+.mucangchai .content {
+    width: 114px;
+    margin-top: -4px!important;
+    background: url('../images/maps/map-icon.png') 98px 2px no-repeat;
+}
+
+.mucangchai .content:hover {
+    background: url('../images/maps/maphover-icon.png') 98px 2px no-repeat;
+}
+
+.nghialo {
+    display: block;
+    padding-left: 190px!important;
+    float: left;
+    width: 100%;
+    height: 1px;
+    line-height: 1px;
+}
+
+.nghialo .content {
+    display: block;
+    width: 60px;
+    cursor: pointer;
+    text-align: center;
+    height: 39px;
+    line-height: 24px;
+    margin-top: -38px!important;
+    padding-bottom: 14px!important;
+    margin-left: 22px;
+    background: url('../images/maps/map-icon.png') 20px bottom no-repeat;
+}
+
+.nghialo .content:hover {
+    background: url('../images/maps/maphover-icon.png') 20px bottom no-repeat;
+}
+
+.hanoihalongsonla {
+    display: block;
+    float: left;
+    width: 100%;
+    line-height: 16px;
+    height: 16px;
+    padding-left: 150px!important;
+}
+
+.hanoihalongsonla .content, .hanoihalongsonla .content1 {
+    display: block;
+    padding-bottom: 0!important;
+    cursor: pointer;
+    padding-right: 0;
+}
+
+.hanoihalongsonla .content {
+    width: 110px;
+    margin-top: 0!important;
+    height: 16px;
+    line-height: 16px;
+    background: url('../images/maps/map-icon.png') 90px 2px no-repeat;
+}
+
+.hanoihalongsonla .content:hover, .puluongninhbinh .content:hover {
+    background: url('../images/maps/maphover-icon.png') 90px 2px no-repeat;
+}
+
+.hanoihalongsonla .content1 {
+    width: 70px;
+    padding-left: 12px;
+    margin-left: 40px;
+    margin-top: -16px!important;
+    height: 40px;
+    padding-top: 15px;
+    line-height: 40px;
+    background: url('../images/maps/city-icon.png') 25px 0 no-repeat;
+}
+
+.hanoihalongsonla .content1:hover {
+    background: url('../images/maps/hovercity-icon.png') 25px 0 no-repeat;
+}
+
+strong {
+    font: 14px "Open Sans Bold"!important;
+}
+
+.hanoihalongsonla .content2 {
+    width: 110px;
+    cursor: pointer;
+    padding-left: 48px;
+    margin-left: 0;
+    margin-top: -5px;
+    padding-bottom: 8px;
+    display: block;
+    height: 16px;
+    line-height: 16px;
+    background: url('../images/maps/map-icon.png') 30px 0 no-repeat;
+}
+
+.hanoihalongsonla .content2:hover {
+    background: url('../images/maps/maphover-icon.png') 30px 0 no-repeat;
+}
+
+.maichaucatba {
+    height: 14px;
+    line-height: 14px;
+    padding-left: 170px;
+    float: left;
+}
+
+.maichaucatba, .maichaucatba .content {
+    padding-bottom: 0!important;
+    margin-top: 0!important;
+    display: block;
+}
+
+.maichaucatba .content {
+    width: 120px;
+    cursor: pointer;
+    padding-right: 0;
+    padding-left: 28px;
+    background: url('../images/maps/map-icon.png') 96px 0 no-repeat;
+}
+
+.maichaucatba .content:hover {
+    background: url('../images/maps/maphover-icon.png') 96px 0 no-repeat;
+}
+
+.maichaucatba .content1 {
+    width: 90px;
+    cursor: pointer;
+    padding-left: 18px;
+    margin-left: 122px;
+    margin-top: 2px;
+    padding-bottom: 4px;
+    display: block;
+    height: 16px;
+    line-height: 16px;
+    background: url('../images/maps/map-icon.png') no-repeat;
+}
+
+.puluongninhbinh, .puluongninhbinh .content {
+    margin-top: 0!important;
+    padding-bottom: 0!important;
+    height: 18px;
+    line-height: 18px;
+    display: block;
+}
+
+.puluongninhbinh {
+    margin-left: 190px;
+    text-align: left!important;
+    float: left;
+}
+
+.puluongninhbinh .content {
+    width: 110px;
+    cursor: pointer;
+    padding-top: 0!important;
+    background: url('../images/maps/map-icon.png') 90px 2px no-repeat;
+}
+
+.puluongninhbinh .content1 {
+    margin-left: 24px;
+    width: 90px;
+    cursor: pointer;
+    white-space: nowrap;
+    padding-left: 18px;
+    line-height: 16px;
+    margin-top: 5px;
+    height: 16px;
+    background: url('../images/maps/map-icon.png') no-repeat;
+}
+
+.danang, .hoian, .hue, .luangprabang, .myson, .nhatrang, .pakse, .phongnha, .vientaine {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.luangprabang .content {
+    margin-left: 20px;
+    width: 100px;
+    cursor: pointer;
+    white-space: nowrap;
+    margin-top: -10px;
+    margin-bottom: 0;
+    padding-bottom: 18px;
+    padding-left: 0;
+    background: url('../images/maps/map-icon.png') 80px 18px no-repeat;
+}
+
+.luangprabang .content:hover {
+    background: url('../images/maps/maphover-icon.png') 80px 18px no-repeat;
+}
+
+.laophonxavan, .vangviengvinh {
+    height: 20px;
+    line-height: 20px;
+    margin-top: 8px!important;
+    padding-top: 0!important;
+    width: 100%;
+    text-align: left!important;
+    float: left;
+}
+
+.laophonxavan, .laophonxavan .content {
+    display: block;
+    padding-bottom: 0!important;
+}
+
+.laophonxavan {
+    margin-left: 150px;
+}
+
+.laophonxavan .content {
+    width: 45px;
+    cursor: pointer;
+    margin-top: 0!important;
+    padding-right: 0;
+    padding-left: 18px;
+}
+
+.laophonxavan .content1 {
+    width: 90px;
+    cursor: pointer;
+    padding-left: 14px;
+    margin-left: -10px;
+    margin-top: -16px;
+    padding-bottom: 8px;
+    display: block;
+    background: url('../images/maps/map-icon.png') bottom center no-repeat;
+}
+
+.champassakkontum .content1:hover, .chaudochochiminh .content1:hover, .laophonxavan .content1:hover {
+    background: url('../images/maps/maphover-icon.png') bottom center no-repeat;
+}
+
+.vangviengvinh, .vangviengvinh .content {
+    padding-bottom: 0!important;
+    display: block;
+}
+
+.vangviengvinh {
+    padding-left: 90px;
+}
+
+.vangviengvinh .content {
+    width: 120px;
+    cursor: pointer;
+    margin-top: 0!important;
+    padding-right: 0;
+    padding-left: 24px;
+    background: url('../images/maps/map-icon.png') 100px 8px no-repeat;
+}
+
+.vangviengvinh .content:hover {
+    background: url('../images/maps/maphover-icon.png') 100px 8px no-repeat;
+}
+
+.vangviengvinh .content1, .vientaine .content {
+    background: url('../images/maps/map-icon.png') 0 6px no-repeat;
+}
+
+.vangviengvinh .content1 {
+    width: 70px;
+    cursor: pointer;
+    padding-left: 18px;
+    margin-left: 100px;
+    margin-top: 10px;
+    padding-bottom: 8px;
+    display: block;
+}
+
+.hue .content, .phongnha .content, .vientaine .content {
+    width: 90px;
+    cursor: pointer;
+    white-space: nowrap;
+    padding-left: 18px;
+}
+
+.vientaine .content {
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.phongnha .content {
+    margin-left: 324px;
+    margin-top: 5px;
+    background: url('../images/maps/map-icon.png') 0 4px no-repeat;
+}
+
+.hue .content {
+    margin-left: 370px;
+    margin-top: 35px;
+    background: url('../images/maps/map-icon.png') 0 6px no-repeat;
+}
+
+.danang .content {
+    width: 80px;
+    cursor: pointer;
+    margin-top: 6px;
+    margin-left: 395px;
+    white-space: nowrap;
+    line-height: 18px;
+    height: 18px;
+    padding-left: 18px;
+    background: url('../images/maps/map-icon.png') 0 4px no-repeat;
+}
+
+.hoian .content, .myson .content, .pakse .content {
+    width: 90px;
+    cursor: pointer;
+    padding-left: 18px;
+    white-space: nowrap;
+}
+
+.hoian .content {
+    margin-left: 410px;
+    margin-top: 0;
+    line-height: 18px;
+    height: 18px;
+    background: url('../images/maps/map-icon.png') 0 2px no-repeat;
+}
+
+.hoian .content:hover {
+    background: url('../images/maps/maphover-icon.png') 0 2px no-repeat;
+}
+
+.myson .content {
+    margin-left: 405px;
+    margin-top: 5px;
+    line-height: 14px;
+    height: 14px;
+    background: url('../images/maps/map-icon.png') no-repeat;
+}
+
+.pakse .content {
+    margin-left: 310px;
+    margin-top: 0;
+    background: url('../images/maps/map-icon.png') 0 6px no-repeat;
+}
+
+.champassakkontum {
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-top: 0!important;
+    margin-top: 10px!important;
+    padding-bottom: 0!important;
+    padding-left: 235px;
+    text-align: left!important;
+    float: left;
+}
+
+.champassakkontum .content, .champassakkontum .content1 {
+    padding-left: 0;
+    margin-top: 0!important;
+    display: block;
+    cursor: pointer;
+}
+
+.champassakkontum .content {
+    width: 110px;
+    padding-bottom: 0!important;
+    padding-right: 0;
+    padding-top: 12px;
+    background: url('../images/maps/map-icon.png') 94px 28px no-repeat;
+}
+
+.champassakkontum .content:hover {
+    background: url('../images/maps/maphover-icon.png') 94px 28px no-repeat;
+}
+
+.champassakkontum .content1 {
+    width: 66px;
+    margin-left: 58px;
+    padding-bottom: 5px;
+    background: url('../images/maps/map-icon.png') bottom center no-repeat;
+}
+
+.siemreapbuonmathuot {
+    display: block;
+    width: 100%;
+    line-height: 84px;
+    height: 84px;
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+    padding-left: 230px;
+    text-align: left!important;
+    float: left;
+}
+
+.siemreapbuonmathuot .content {
+    display: block;
+    width: 120px;
+    cursor: pointer;
+    padding-bottom: 20px!important;
+    padding-right: 0;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 18px;
+    margin-top: 54px!important;
+    background: url('../images/maps/map-icon.png') 0 4px no-repeat;
+}
+
+.siemreapbuonmathuot .content1 {
+    width: 110px;
+    cursor: pointer;
+    padding-left: 0;
+    margin-left: 46px;
+    padding-bottom: 30px;
+    padding-top: 0;
+    display: block;
+    line-height: 14px;
+    height: 14px;
+    margin-top: 64px!important;
+    background: url('../images/maps/map-icon.png') 40px 16px no-repeat;
+}
+
+.siemreapbuonmathuot .content1:hover {
+    background: url('../images/maps/maphover-icon.png') 40px 16px no-repeat;
+}
+
+.battambangnhatrang {
+    display: block;
+    width: 100%;
+    padding-bottom: 0!important;
+    margin-left: 110px;
+    text-align: left!important;
+    float: left;
+    margin-top: 30px!important;
+}
+
+.battambangnhatrang .content {
+    display: block;
+    width: 120px;
+    cursor: pointer;
+    padding-bottom: 0!important;
+    margin-top: 20px!important;
+    padding-right: 0;
+    padding-left: 14px;
+    background: url('../images/maps/map-icon.png') 100px 6px no-repeat;
+}
+
+.battambangnhatrang .content:hover {
+    background: url('../images/maps/maphover-icon.png') 100px 6px no-repeat;
+}
+
+.battambangnhatrang .content1 {
+    width: 90px;
+    cursor: pointer;
+    padding-left: 16px;
+    margin-left: 254px;
+    padding-bottom: 0;
+    margin-top: 26px;
+    display: block;
+    background: url('../images/maps/map-icon.png') 0 4px no-repeat;
+}
+
+.cambodiadalat, .chaudochochiminh, .pnompenhmuine {
+    margin-top: 0!important;
+    padding-top: 0!important;
+    width: 100%;
+    text-align: left!important;
+    float: left;
+}
+
+.cambodiadalat, .cambodiadalat .content {
+    display: block;
+    padding-bottom: 0!important;
+}
+
+.cambodiadalat {
+    height: 18px;
+    line-height: 18px;
+    margin-left: 220px;
+}
+
+.cambodiadalat .content {
+    width: 120px;
+    cursor: pointer;
+    padding-right: 0;
+    padding-left: 34px;
+    margin-top: -30px!important;
+}
+
+.cambodiadalat .content1 {
+    width: 90px;
+    cursor: pointer;
+    padding-bottom: 0;
+    margin-top: -5px!important;
+    margin-left: 30px;
+    height: 16px;
+    line-height: 16px;
+    display: block;
+    background: url('../images/maps/map-icon.png') 74px 0 no-repeat;
+}
+
+.chaudochochiminh, .longxuyen, .pnompenhmuine, .pnompenhmuine .content {
+    padding-bottom: 0!important;
+}
+
+.pnompenhmuine, .pnompenhmuine .content1 {
+    height: 18px;
+    line-height: 18px;
+    display: block;
+}
+
+.pnompenhmuine {
+    margin-left: 196px;
+}
+
+.pnompenhmuine .content {
+    display: block;
+    width: 110px;
+    cursor: pointer;
+    margin-top: -8px!important;
+    padding-right: 0;
+    padding-left: 14px;
+    background: url('../images/maps/map-icon.png') 98px 4px no-repeat;
+}
+
+.pnompenhmuine .content:hover {
+    background: url('../images/maps/maphover-icon.png') 98px 4px no-repeat;
+}
+
+.pnompenhmuine .content1 {
+    width: 90px;
+    cursor: pointer;
+    padding-left: 18px;
+    margin-left: 148px;
+    margin-top: 0;
+    padding-bottom: 0;
+    background: url('../images/maps/map-icon.png') 0 4px no-repeat;
+}
+
+.chaudochochiminh {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 235px;
+}
+
+.chaudochochiminh .content, .chaudochochiminh .content1, .longxuyen, .phuquocbentre {
+    height: 18px;
+    line-height: 18px;
+    display: block;
+}
+
+.chaudochochiminh .content {
+    width: 90px;
+    cursor: pointer;
+    padding-bottom: 10px!important;
+    margin-top: 6px!important;
+    padding-left: 0;
+    padding-right: 10px;
+    margin-right: 10px;
+    background: url('../images/maps/map-icon.png') 70px 4px no-repeat;
+}
+
+.chaudochochiminh .content:hover {
+    background: url('../images/maps/maphover-icon.png') 70px 4px no-repeat;
+}
+
+.chaudochochiminh .content1 {
+    width: 90px;
+    cursor: pointer;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: -10px;
+    margin-top: -8px;
+    padding-bottom: 34px;
+    background: url('../images/maps/map-icon.png') bottom center no-repeat;
+}
+
+.longxuyen {
+    width: 100%;
+    padding-top: 0!important;
+    margin-top: 30px!important;
+    margin-left: 178px;
+    text-align: left!important;
+    float: left;
+}
+
+.canthovinhlong .content1, .longxuyen .content, .phuquocbentre .content {
+    height: 16px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.longxuyen .content {
+    margin-left: 0;
+    width: 120px;
+    margin-top: 0;
+    white-space: nowrap;
+    padding-left: 14px;
+    padding-bottom: 0;
+    background: url('../images/maps/map-icon.png') 102px 2px no-repeat;
+}
+
+.longxuyen .content:hover {
+    background: url('../images/maps/maphover-icon.png') 102px 2px no-repeat;
+}
+
+.phuquocbentre {
+    width: 100%;
+    padding-top: 6px!important;
+    margin-top: 4px!important;
+    padding-bottom: 8px!important;
+    padding-left: 170px;
+    text-align: left!important;
+    float: left;
+}
+
+.phuquocbentre .content {
+    display: block;
+    width: 86px;
+    padding-bottom: 0!important;
+    margin-top: 0!important;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    background: url('../images/maps/map-icon.png') 72px 0 no-repeat;
+}
+
+.phuquocbentre .content:hover {
+    background: url('../images/maps/maphover-icon.png') 72px 0 no-repeat;
+}
+
+.phuquocbentre .content1 {
+    width: 90px;
+    cursor: pointer;
+    padding-left: 18px;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 112px;
+    margin-top: -18px;
+    padding-bottom: 4px;
+    display: block;
+    background: url('../images/maps/map-icon.png') 0 4px no-repeat;
+}
+
+.canthovinhlong {
+    padding-bottom: 0!important;
+    margin-top: 0!important;
+    display: block;
+}
+
+.canthovinhlong {
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    padding-top: 2px!important;
+    padding-left: 245px;
+    text-align: left!important;
+    float: left;
+}
+
+.canthovinhlong .content {
+    width: 74px;
+    cursor: pointer;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-top: 8px;
+    background: url('../images/maps/map-icon.png') 60px 8px no-repeat;
+}
+
+.canthovinhlong .content:hover {
+    background: url('../images/maps/maphover-icon.png') 60px 8px no-repeat;
+}
+
+.canthovinhlong .content1 {
+    width: 98px;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 20px;
+    margin-top: -1px;
+    padding-left: 20px;
+    display: block;
+    background: url('../images/maps/map-icon.png') no-repeat;
+}
+/* <div class="mapdest"> */
+.mapdest {
+    margin-left: 50px;
+    background: #f5f5f5;
+    border: 1px solid #eee;
+    height: 630px;
+    margin-top: 0;
+    padding: 20px;
+    overflow: auto;
+}
+
+.mapdest h2 {
+    margin-top: 14px!important;
+    margin-bottom: 20px;
+}
+
+.mapdest ul {
+    height: auto!important;
+    border: none!important;
+    margin: 0!important;
+    padding: 0!important;
+}
+
+.clearfix::before {
+    content: "";
+    display: table-cell;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.uk-input:focus {
+    outline: 0;
+    background-color: #fff;
+    color: #666;
+    border-color: #1e87f0;
+}
+/* <div class="boxotherdest"> */
+.boxotherdest {
+    margin-left: 50px;
+    padding: 20px;
+}
+
+.boxiconadd {
+    height: 40px;
+    margin-top: 20px;
+    width: 410px;
+}
+
+.boxcustomize .uk-input {
+    width: 70%;
+    display: block;
+    height: 40px;
+}
+
+.bgiconadd {
+    height: 40px;
+    padding-top: 10px;
+    color: #fff;
+    text-align: center;
+    background: #ea5a35;
+    cursor: pointer;
+}
+
+.boxcustomize .control-label {
+    width: 30%;
+    height: 40px;
+    display: block;
+    float: left;
+    padding-top: 12px;
+}
+
+.boxparticipants .field-customizeform-adults label {
+    width: 180px!important;
+}
+
+.boxparticipants .field-customizeform-adults .uk-input {
+    width: 135px!important;
+}
+
+.boxparticipants .field-customizeform-children label {
+    width: 250px!important;
+}
+
+.boxparticipants .field-customizeform-children .uk-input {
+    width: 135px!important;
+}
+
+.invalid-feedback  {
+    font-size: 14px;
+}
+
+.custom-select {
+    height: 40px;
+    border-radius: 0;
+}
+
+.boxtraveldates .custom-select {
+    width: 135px;
+}
+
+.boxtraveldates .uk-input {
+    width: 135px;
+}
+
+.boxtraveldates .field-customizeform-num_days {
+    float: left;
+    margin-right: 12px;
+}
+
+.boxtraveldates .field-customizeform-num_days label {
+    width: 160px!important;
+    padding-right: 10px;
+    margin-bottom: 0px;
+}
+
+span.daystxtdates {
+    display: block;
+    margin-top: 8px!important;
+}
+
+.boxprefer .custom-checkbox {
+    padding-bottom: 10px;
+    display: inline-block!important;
+}   
+
+.custom-control-label::before {
+    background-color: transparent;
+    border: 1px solid;
+    width: 12px;
+    height: 12px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .15);
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 2px;
+}
+
+.custom-control-label::after {
+    width: 13px;
+    height: 13px;
+    outline: none;
+    box-shadow: none;
+}
+
+.form-group {
+    margin-bottom: 0px;
+}
+
+.boxhowdid .custom-radio {
+    width: 20%;
+    margin-left: -4px;
+    display: inline-block !important;
+}
+
+.boxhowdid .custom-radio:first-child {
+    margin-left: 0px;
+}
+
+.custom-control-inline {
+    margin-right: 0px;
+}
+
+.form-control {
+    border-radius: 0px;
+}
+
+.form-control::placeholder {
+    font-size: 14px;
+}
+
+.form-control:focus  {
+    box-shadow: none;
+    border-color: #1e87f0;
+}
+
+.requiredfields {
+    color: #f0506e;
+    margin-left: 30%;
+    margin-bottom: 8px;
+}
+
+.custom-select {
+    width: 70%;
+}
+
+.custom-select:focus {
+    border-color: #1e87f0;
+    box-shadow: none;
+}
+
+.boxcustomize .control-label span, 
+.captchatxt {
+    color: #f0506e;
+}
+
+button:focus {
+    outline: none;
+}
+
+.uk-button-default {
+    background: #ea5a35;
+    color: #fff!important;
+    border: none;
+}
+
+.uk-button-default:focus, .uk-button-default:hover {
+    background: #00947d;
+    color: #fff!important;
+    border: none;
+    cursor: pointer;
+}
+
+.uk-button-default:active {
+    background-color: transparent;
+    color: #333!important;
+    border-color: #999;
+}
+
+.captchatxt {
+    white-space: nowrap;
+}
+
+.col-lg-12 {
+    padding-right: 0px;
+}
+
+.col-md-6 {
+    padding-right: 0px;
+}
+/*FOOTER*/
+footer {
+    background: #272727;
+    padding-top: 55px;
+    color: #fff;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+#copyright {
+    background: #4c4c4c;
+    margin-top: 20px!important;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+footer h3, footer h6 {
+    border-bottom: 1px solid #484848;
+    height: 65px!important;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+footer a, footer  h4 {
+    color: #fff!important;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.margbot14 {
+    margin-bottom: 14px!important;
+}
+.title16 {
+    font: 16px "Open Sans Bold";
+}
+
+.uk-input {
+    vertical-align: middle;
+    display: inline-block;
+    max-width: 100%;
+    width: 100%;
+    border: 0 none;
+    padding: 0 10px;
+    background: #fff;
+    color: #666;
+    border: 1px solid #e5e5e5;
+    transition: .2s ease-in-out;
+    transition-property: color,background-color,border;
+    outline: none;
+}
+
+.uk-form-width-medium {
+    width: 200px;
+}
+
+.uk-button {
+    margin-left: -5px;
+    border: none;
+    overflow: visible;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 30px;
+    vertical-align: middle;
+    font-size: 12.25px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .1s ease-in-out;
+    transition-property: color,background-color,border-color;
+}
+
+.buttongreen {
+    background: #00947d;
+    font-family: "Open Sans Bold";
+}
+
+footer > a:hover {
+    color: #fff !important;
+}
+#sendsubcribe {
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none!important;
+}
+
+.paddtop14 {
+    padding-top: 14px !important;
+}
+
+.uk-icon-button {
+    box-sizing: border-box;
+    width: 36px;
+    height: 36px;
+    border-radius: 500px;
+    background: #f8f8f8;
+    color: #999;
+    vertical-align: middle;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: .1s ease-in-out;
+    transition-property: color,background-color;
+}
+
+.uk-margin-small-right {
+    margin-right: 10px!important;
+}
+
+#copyright .uk-container {
+    color: #a7a7a7;
+    padding-top: 14px;
+    height: 46px;
+}
+
+#copyright a {
+    padding-right: 5px;
+    color: #a7a7a7!important;
+}
+
+#customizetour, #whatsapp {
+    position: fixed;
+    right: 0;
+    padding-left: 6px!important;
+    padding-right: 6px!important;
+    transition: .4s ease-in-out;
+    z-index: 999;
+}
+#whatsapp {
+    top: 70%;
+}
+
+#customizetour {
+    top: 82%;
+}
+
+
+/*Responsive*/
+@media all and (max-width: 1200px) {
+
+    /*HEADER*/
+    .uk-navbar-dropdown.destinations {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .hotline {
+        padding-left: 20px;
+    }
+    /*MAIN*/
+    .mapdest {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
+    .boxotherdest {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .boxparticipants .field-customizeform-adults label {
+        width: 148px!important;
+    }
+
+    .col-xl-6 {
+        padding-right: 0px;
+    }
+
+    .boxtraveldates .custom-select {
+        margin-left: -90px;
+        width: 90%;
+    }
+
+    .mabot30 {
+        margin-bottom: 30px;
+    }
+
+    .mabot30 .col-lg-3 {
+        width: 160px !important;
+    }
+
+    .boxtraveldates .uk-input {
+        width: 300px;
+    }
+    /*FOOTER*/
+    .first-column {
+        padding-left: 20px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .uk-gird {
+        display: block;
+    }
+
+    .infomation-contact {
+        display: none;
+    }
+
+    .navbar-right .mytrip{
+        display: none;
+    }
+
+    .uk-navbar-nav li:not(:first-child) {
+        display: none;
+    }
+
+    #languageBtn, .uk-navbar-toggle {
+        display: block;
+    }
+    /* Main */
+    .boxparticipants .field-customizeform-adults .uk-input,
+    .boxparticipants .field-customizeform-children .uk-input {
+        width: 100% !important;
+    }
+
+    .boxtraveldates .custom-select {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        width: 97%;
+    }
+
+    .boxhowdid .custom-radio {
+        width: 30%;
+        margin-left: 0px;
+    }
+    /*Navbar*/
+    .uk-offcanvas-bar {
+        left: -350px;
+        width: 350px;
+        padding: 40px 40px;
+    }
+
+
+}
+@media screen and (max-width: 768px) {
+    .bgimage {
+        height: 450px;
+    }
+
+    .col-6:nth-of-type(n+3) {
+        margin-top: 30px;
+    }
+
+    .mabot30 {
+        margin-bottom: 30px;
+    }
+
+    .boxhowdid .custom-radio {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .captchatxt {
+        white-space: wrap;
+    }
+}
+@media screen and (max-width: 576px) {
+    .second-column {
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+
+    .bgimage {
+        height: 500px;
+    }
+
+    .col20 {
+        width: 50%;
+    }
+
+    .col20:nth-of-type(n+3) {
+        margin-top: 20px;
+    }
+
+    .boxtraveldates .uk-input {
+        width: 150px;
+    }
+}
+
+@media (min-width:640px) {
+
+    /*HEADER*/
+    .uk-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .col20 {
+        width: 20%;
+    }
+}
+
+@media (min-width:768px) {
+}
+
+@media (min-width:992px) {
+
+    /*HEADER*/
+    .uk-container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (min-width:1200px) {
+
+    /*HEADER*/
+    .uk-grid {
+        margin-left: -30px;
+    }
+
+    .uk-grid>* {
+        padding-left: 30px;
+    }
+
+    *+.uk-grid-margin,
+    .uk-grid+.uk-grid,
+    .uk-grid>.uk-grid-margin {
+        margin-top: 30px;
+    }
+}
